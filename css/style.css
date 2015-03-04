@@ -439,6 +439,7 @@ label {
   background: url(../img/header/headerbg.jpg) fixed no-repeat;
   position: relative;
   z-index: 1;
+  background-size: 100%
 }
 .section.splash2 {
   background: url(../img/header/headerbg2.jpg) fixed no-repeat;
