@@ -11,8 +11,8 @@ function estatisticas(){
 			$('.high').html("PKR"+statisticas['high']);
 			$('.low').html("PKR"+statisticas['low']);
 			$('.vol').html(statisticas['vol']);
-			$('.preco-btc b').html(statisticas['buy']);
-			$('.preco-btc-s b').html(statisticas['sell']);
+			$('.preco-btc-b').html(statisticas['buy']);
+			$('.preco-btc-b').html(statisticas['sell']);
 		})
 		.fail(function() {
 			console.log("error");
