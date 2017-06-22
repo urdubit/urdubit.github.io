@@ -2,8 +2,7 @@ function estatisticas(){
 		var statisticas ='';
 		$.ajax({
 			url: 'https://api.blinktrade.com/api/v1/PKR/ticker',
-			dataType: 'jsonp',
-			jsonpCallback: 'callback',
+			dataType: 'JSONP',
 			data: {crypto_currency: 'BTC'},
 			async: false
 		})
