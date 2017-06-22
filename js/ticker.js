@@ -1,26 +1,9 @@
-function statisticstwo(){
-	jQuery.ajax({
-            url: "../ticker/tickerdata.php",
-            type: "GET",
-
-            contentType: 'application/json; charset=utf-8',
-            success: function(resultData) {
-                //here is your json.
-                  // process it
-                  console.log(resultData);
-
-            },
-            error : function(jqXHR, textStatus, errorThrown) {
-            },
-
-            timeout: 120000,
-        });
-}
 function estatisticas(){
 		var statisticas ='';
 		$.ajax({
 			url: 'https://api.blinktrade.com/api/v1/PKR/ticker',
 			dataType: 'jsonp',
+			jsonpCallback: 'callback',
 			data: {crypto_currency: 'BTC'},
 			async: false
 		})
