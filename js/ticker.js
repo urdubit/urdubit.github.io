@@ -40,7 +40,7 @@ $(function(){
 
 
 	//popover
-	$('[data-toggle="popover"]').popover();
+	//$('[data-toggle="popover"]').popover();
 
 	//tooltip
 	$('[data-toggle="tooltip"]').tooltip();
