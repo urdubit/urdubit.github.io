@@ -43,7 +43,7 @@ $(function(){
 	//$('[data-toggle="popover"]').popover();
 
 	//tooltip
-	$('[data-toggle="tooltip"]').tooltip();
+	//$('[data-toggle="tooltip"]').tooltip();
 
 	// remove video
 	if ( $(window).width() < 780){
