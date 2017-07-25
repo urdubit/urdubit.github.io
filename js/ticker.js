@@ -11,7 +11,7 @@
 		}
 	}
 	function statisticstwo(){
-		ajax = ajaxObj("POST","http://www.certify.pk/ticker.php");
+		ajax = ajaxObj("GET","http://www.certify.pk/ticker.php");
 		//console.log(ssnicnum);
 		ajax.onreadystatechange = function() {
 			if(ajaxReturn(ajax) == true){
