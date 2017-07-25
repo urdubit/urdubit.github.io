@@ -26,7 +26,12 @@ function estatisticas(){
 		url: "https://www.retinavr.co/btcticker/ticker.php", 
 		success: function(result){
         		var returndata = JSON.parse(result);
-			console.log(returndata);
+			$('.last').html("PKR"+returndata['last']);
+			$('.high').html("PKR"+returndata['high']);
+			$('.low').html("PKR"+returndata['low']);
+			$('.vol').html(returndata['vol']);
+			$('.preco-btc-b').html(returndata['buy']);
+			$('.preco-btc-s').html(returndata['sell']);
     		}
 	  });
 
