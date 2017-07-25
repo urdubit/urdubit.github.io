@@ -1,6 +1,6 @@
 
 function estatisticas(){
-		var statisticas ='';
+		/*var statisticas ='';
 		$.ajax({
 			url: 'https://www.retinavr.co/btcticker/ticker.php',
 			dataType: 'JSONP',
@@ -21,7 +21,12 @@ function estatisticas(){
 		.always(function() {
 			console.log("complete");
 		});
-		
+		*/
+	  $.ajax({
+		url: "https://www.retinavr.co/btcticker/ticker.php", 
+		success: function(result){
+        		console.log(result);
+    		}});
 
 	}
 
