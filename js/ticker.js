@@ -26,7 +26,8 @@ function estatisticas(){
 		url: "https://www.retinavr.co/btcticker/ticker.php", 
 		success: function(result){
         		console.log(result);
-    		}});
+    		}
+	  });
 
 	}
 
