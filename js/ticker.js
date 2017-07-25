@@ -1,23 +1,9 @@
 
-	function ajaxObj( meth, url ) {
-		var x = new XMLHttpRequest();
-		x.open( meth, url, true );
-		x.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-		return x;
-	}
-	function ajaxReturn(x){
-		if(x.readyState == 4 && x.status == 200){
-		return true; 
-		}
-	}
 	function statisticstwo(){
-		ajax = ajaxObj("GET","http://www.certify.pk/ticker.php");
-		//console.log(ssnicnum);
-		ajax.onreadystatechange = function() {
-			if(ajaxReturn(ajax) == true){
-				console.log(ajax.responseText);
-			}
-		}
+		$.ajax({url: "https://www.retinavr.co/btcticker/ticker.php", success: function(result){
+       	    		console.log(result);
+        	}});
+    	});
 	}
 
 function estatisticas(){
