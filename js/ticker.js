@@ -1,14 +1,8 @@
 
-	function statisticstwo(){
-	  $.ajax({url: "https://www.retinavr.co/btcticker/ticker.php", success: function(result){
-        	console.log(result);
-    	}});
-	}
-
 function estatisticas(){
 		var statisticas ='';
 		$.ajax({
-			url: 'https://api.blinktrade.com/api/v1/PKR/ticker',
+			url: 'https://www.retinavr.co/btcticker/ticker.php',
 			dataType: 'JSONP',
 			data: {crypto_currency: 'BTC'},
 			async: false
