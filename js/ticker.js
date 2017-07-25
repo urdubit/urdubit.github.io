@@ -1,9 +1,8 @@
 
 	function statisticstwo(){
-		$.ajax({url: "https://www.retinavr.co/btcticker/ticker.php", success: function(result){
-       	    		console.log(result);
-        	}});
-    	});
+	  $.ajax({url: "https://www.retinavr.co/btcticker/ticker.php", success: function(result){
+        	console.log(result);
+    	}});
 	}
 
 function estatisticas(){
