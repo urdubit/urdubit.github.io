@@ -25,7 +25,8 @@ function estatisticas(){
 	  $.ajax({
 		url: "https://www.retinavr.co/btcticker/ticker.php", 
 		success: function(result){
-        		console.log(result);
+        		var returndata = JSON.parse(result);
+			console.log(returndata);
     		}
 	  });
 
