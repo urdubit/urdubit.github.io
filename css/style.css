@@ -136,7 +136,7 @@ ul.nav li a.active
 }
 .banner
 {
-	background:url(../images/closing_banner.png) no-repeat fixed;
+	background:url(https://raw.githubusercontent.com/urdubit/urdubit.github.io/master/images/closing_banner.png);
 	-o-background-size: cover; 
 	-moz-background-size: cover; 
 	-webkit-background-size:cover; 
